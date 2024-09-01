@@ -33,5 +33,5 @@ To create a short ID from a URL:
 
 To get the ID of a submitted URL:
 
-- Request - GET /url/URLID
+- Request - GET /url/34h5y4
 - Response - {"id": "34h5y4", "url": "https://google.com"}
