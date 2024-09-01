@@ -20,18 +20,18 @@ encore run
 
 This will start up the server and you can visit the following:
 
-http://127.0.0.1:9400 - Developer Dashboard
-http://127.0.0.1:4000 - API/Service
+- http://127.0.0.1:9400 - Developer Dashboard
+- http://127.0.0.1:4000 - API/Service
 
 ## API Usage
 
 To create a short ID from a URL:
 
-Request - POST /url
-Body - {"url": "http://google.com"}
-Response - {"id": "34h5y4", "url": "https://google.com"}
+- Request - POST /url
+- Body - {"url": "http://google.com"}
+- Response - {"id": "34h5y4", "url": "https://google.com"}
 
 To get the ID of a submitted URL:
 
-Request - GET /url/URLID
-Response - {"id": "34h5y4", "url": "https://google.com"}
+- Request - GET /url/URLID
+- Response - {"id": "34h5y4", "url": "https://google.com"}
