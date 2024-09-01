@@ -1,6 +1,6 @@
 # Encore URL Shortener
 
-This is a simple service that takes a URL and returns an ID to create a short URL. It is written in TypeScript using the Encore framework. This is the code for my YouTube tutorial.
+This is a simple service that takes a URL and returns an ID to create a short URL. It is written in TypeScript using the Encore framework. This is the code for my [YouTube tutorial](https://youtu.be/tL01EzN2-xA).
 
 The "greeting" folder is just to show you how to create endpoints with Encore.ts. You can delete this if you want.
 
