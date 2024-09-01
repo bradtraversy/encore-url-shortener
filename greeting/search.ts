@@ -1,3 +1,8 @@
+/*
+ * This file is just to show you how to create endpoints with a query param. You can delete the "greeting" folder if you want.
+ *
+ */
+
 import { api, Query } from 'encore.dev/api';
 
 interface SearchParams {

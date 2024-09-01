@@ -1,38 +1,37 @@
-# Empty Encore TS Template
+# Encore URL Shortener
 
-## Developing locally
+This is a simple service that takes a URL and returns an ID to create a short URL. It is written in TypeScript using the Encore framework. This is the code for my YouTube tutorial.
 
-When you have [installed Encore](https://encore.dev/docs/install), you can create a new Encore application and clone this example with this command.
+The "greeting" folder is just to show you how to create endpoints with Encore.ts. You can delete this if you want.
+
+## Usage
+
+Install the dependencies
 
 ```bash
-encore app create my-app-name --example=ts/empty
+npm install
 ```
 
-## Running locally
+Run the server
+
 ```bash
 encore run
 ```
 
-While `encore run` is running, open <http://localhost:9400/> to view Encore's [local developer dashboard](https://encore.dev/docs/observability/dev-dash).
+This will start up the server and you can visit the following:
 
-## Deployment
+http://127.0.0.1:9400 - Developer Dashboard
+http://127.0.0.1:4000 - API/Service
 
-Deploy your application to a staging environment in Encore's free development cloud:
+## API Usage
 
-```bash
-git add -A .
-git commit -m 'Commit message'
-git push encore
-```
+To create a short ID from a URL:
 
-Then head over to the [Cloud Dashboard](https://app.encore.dev) to monitor your deployment and find your production URL.
+Request - POST /url
+Body - {"url": "http://google.com"}
+Response - {"id": "34h5y4", "url": "https://google.com"}
 
-From there you can also connect your own AWS or GCP account to use for deployment.
+To get the ID of a submitted URL:
 
-Now off you go into the clouds!
-
-## Testing
-
-```bash
-encore test
-```
+Request - GET /url/URLID
+Response - {"id": "34h5y4", "url": "https://google.com"}
